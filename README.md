@@ -17,17 +17,17 @@ Example:
 
 IN:
 
-`GEN_ALL_POS_MOV 3 3 3 2
-1 0 0
-0 0 0
-0 0 0`
+GEN_ALL_POS_MOV 3 3 3 2 <br>
+1 0 0 <br>
+0 0 0 <br>
+0 0 0 <br>
 
 OUT:
 
-8
+`8 \n
 1 2 0
 0 0 0
-0 0 0
+0 0 0`
 
 1 0 2
 0 0 0
