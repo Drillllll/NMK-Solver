@@ -17,45 +17,28 @@ Example:
 
 IN:
 
-GEN_ALL_POS_MOV 3 3 3 2 <br>
+`GEN_ALL_POS_MOV 3 3 3 2 <br>
 1 0 0 <br>
 0 0 0 <br>
-0 0 0 <br>
+0 0 0 <br>`
 
 OUT:
 
-`8 \n
-1 2 0
-0 0 0
-0 0 0`
+`8 <br>
+1 2 0 <br>
+0 0 0 <br>
+0 0 0 <br>
 
-1 0 2
-0 0 0
-0 0 0
+1 0 2 <br>
+0 0 0 <br>
+0 0 0 <br>
 
-1 0 0
-2 0 0
-0 0 0
+...
 
-1 0 0
-0 2 0
-0 0 0
 
-1 0 0
-0 0 2
-0 0 0
-
-1 0 0
-0 0 0
-2 0 0
-
-1 0 0
-0 0 0
-0 2 0
-
-1 0 0
-0 0 0
-0 0 2
+1 0 0 <br>
+0 0 0 <br>
+0 0 2 <br>`
 
 
 2. GEN_ALL_POS_MOV_CUT_IF_GAME_OVER N M K ActivePlayer - genarates all possible moves with their number. If one od the moves is winning or ending a game, only the first mobe is generated.
@@ -63,16 +46,16 @@ OUT:
 Example:
 
 IN:
-GEN_ALL_POS_MOV_CUT_IF_GAME_OVER 3 3 3 1
-0 2 1
-2 2 1
-0 1 0
+`GEN_ALL_POS_MOV_CUT_IF_GAME_OVER 3 3 3 1 <br>
+0 2 1 <br>
+2 2 1 <br>
+0 1 0 <br>`
 
 OUT:
-1
-0 2 1
-2 2 1
-0 1 1
+`1 <br>
+0 2 1 <br>
+2 2 1 <br>
+0 1 1 <br>`
 
 
 3 SOLVE_GAME_STATE N M K ActivePlayer - solve the game giving one response: FIRST_PLAYER_WINS, SECOND_PLAYER_WINS, BOTH_PLAYERS_TIE.
@@ -80,10 +63,10 @@ OUT:
 Example:
 
 IN:
-SOLVE_GAME_STATE 3 3 3 2
-1 0 0
-0 0 0
-0 0 0
+`SOLVE_GAME_STATE 3 3 3 2 <br>
+1 0 0 <br>
+0 0 0 <br>
+0 0 0 <br>`
 
 OUT:
-BOTH_PLAYERS_TIE
+`BOTH_PLAYERS_TIE`
